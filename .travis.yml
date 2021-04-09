@@ -13,4 +13,4 @@ script:
   - sbt clean coverage test
   - sbt coverageAggregate
 after_success:
-  - bash <(curl -s https://codecov.io/bash)
+  - bash -x <(curl -s https://codecov.io/bash)
